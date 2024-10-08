@@ -1,0 +1,15 @@
+# Escludi la cartella .idea di WebStorm
+.idea/
+
+# Escludi eventuali file di log
+*.log
+
+# Escludi node_modules (se usi Node.js)
+node_modules/
+
+# Escludi file di sistema
+.DS_Store
+
+# Escludi cartelle di distribuzione (build)
+dist/
+build/
