@@ -7,7 +7,7 @@
 
 body {
     font-family: 'DoomFont', sans-serif;
-    background-color: #252525;
+    background-color: rgb(7, 7, 7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,21 +21,70 @@ body {
 }
 
 .countdown h1 {
-    font-size: 5rem; /* Dimensione del fonts del titolo */
+    font-size: 5rem; /* Dimensione del font del titolo */
     margin: 0;
     font-weight: bold;
     color: #a50900;
-    text-shadow: 2px 2px 5px rgb(104, 7, 0); /* Effetto ombra al testo */
+    background-color: #460606; /* Sfondo simile al colore dell'immagine */
+    border: 2px solid #a50900; /* Bordo rosso */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(165, 9, 0, 0.7); /* Effetto alone luminoso */
+    display: flex; /* Abilita Flexbox */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
 #countdown {
-    font-size: 3rem; /* Dimensione del fonts del countdown */
+    font-size: 3rem; /* Dimensione del font del countdown */
     color: #bd1400;
     margin-top: 20px;
+    display: flex; /* Abilita Flexbox */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
 h2 {
     margin-top: 0;
     font-size: 1.5rem;
     color: #bd1400;
+    background-color: #460606; /* Sfondo simile al colore dell'immagine */
+    border: 2px solid #a50900; /* Bordo rosso */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(165, 9, 0, 0.7); /* Effetto alone luminoso */
+    display: flex; /* Abilita Flexbox */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
 }
+
+/* Stile personalizzato per il bottone */
+button {
+    font-family: 'DoomFont', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #460606;
+    border: 2px solid #a50900;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex; /* Abilita Flexbox */
+    justify-content: center; /* Centra orizzontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(165, 9, 0, 0.7);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #a50900;
+    box-shadow: 0 0 25px rgba(165, 9, 0, 1);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
