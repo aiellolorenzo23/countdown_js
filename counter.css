@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'DoomFont';
+    src: url('fonts/AmazDooMLeft2.ttf') format('truetype'); /* O format('woff') se usi woff */
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'DoomFont', sans-serif;
     background-color: #252525;
     display: flex;
     justify-content: center;
@@ -14,21 +21,21 @@ body {
 }
 
 .countdown h1 {
-    font-size: 5rem; /* Dimensione del font del titolo */
+    font-size: 5rem; /* Dimensione del fonts del titolo */
     margin: 0;
     font-weight: bold;
-    color: #e0e0e0;
-    text-shadow: 2px 2px 5px rgba(165, 165, 165, 0.3); /* Effetto ombra al testo */
+    color: #a50900;
+    text-shadow: 2px 2px 5px rgb(104, 7, 0); /* Effetto ombra al testo */
 }
 
 #countdown {
-    font-size: 3rem; /* Dimensione del font del countdown */
-    color: #555;
+    font-size: 3rem; /* Dimensione del fonts del countdown */
+    color: #bd1400;
     margin-top: 20px;
 }
 
 h2 {
     margin-top: 0;
     font-size: 1.5rem;
-    color: #d3d3d3;
+    color: #bd1400;
 }
