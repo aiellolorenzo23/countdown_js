@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28-Day Countdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .countdown {
+            text-align: center;
+        }
+        .countdown h1 {
+            font-size: 4rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="countdown">
+        <h1 id="countdown"></h1>
+    </div>
+
+    <script>
+        // Imposta il countdown a 28 giorni da oggi
+        const countdownDate = new Date();
+        countdownDate.setDate(countdownDate.getDate() + 28);
+
+        const countdownElement = document.getElementById("countdown");
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            // Calcola giorni, ore, minuti e secondi
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            if (distance < 0) {
+                countdownElement.innerHTML = "EXPIRED";
+            }
+        }
+
+        // Aggiorna il countdown ogni secondo
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
