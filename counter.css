@@ -7,13 +7,19 @@
 
 body {
     font-family: 'DoomFont', sans-serif;
-    background-color: rgb(7, 7, 7);
+    /*background-color: rgb(7, 7, 7);*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    background-color: #2e0404; /* Sfondo simile al colore dell'immagine */
+    border: 2px solid #a50900; /* Bordo rosso */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(165, 9, 0, 0.7); /* Effetto alone luminoso */
 }
 
 .countdown {
