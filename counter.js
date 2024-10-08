@@ -30,7 +30,7 @@ function updateCountdown() {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Mostra il countdown
-    countdownElement.innerHTML = `${days} d - ${hours} h - ${minutes} m - ${seconds}s`;
+    countdownElement.innerHTML = `${days} d - ${hours} h - ${minutes} m - ${seconds} s`;
 
     // Se il countdown è scaduto
     if (distance < 0) {
