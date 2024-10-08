@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5; /* Colore di sfondo chiaro */
+    background-color: #252525;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,8 +17,8 @@ body {
     font-size: 5rem; /* Dimensione del font del titolo */
     margin: 0;
     font-weight: bold;
-    color: #333; /* Colore del testo scuro */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Effetto ombra al testo */
+    color: #e0e0e0;
+    text-shadow: 2px 2px 5px rgba(165, 165, 165, 0.3); /* Effetto ombra al testo */
 }
 
 #countdown {
@@ -30,5 +30,5 @@ body {
 h2 {
     margin-top: 0;
     font-size: 1.5rem;
-    color: #333;
+    color: #d3d3d3;
 }
